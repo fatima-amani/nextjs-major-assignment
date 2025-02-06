@@ -26,12 +26,10 @@ export default function Sidebar({ setActiveSection, activeSection }: SidebarProp
           <div
             key={index}
             onClick={() => setActiveSection(option)}
-            className={`w-full flex flex-col items-center cursor-pointer transition-colors duration-300 ${
-              activeSection === option ? "bg-pink-500" : ""
-            }`}
+            className={`w-[80%] h-[80%] flex flex-col items-center cursor-pointer transition-colors duration-300`}
           >
-            <div className="w-[5.479rem] h-0 border-[0.04625rem] border-[#3d4142]"></div>
-            <SideBarIcon sectionName={option} />
+                <div className="w-[5.479rem] h-0 border-[0.04625rem] border-[#3d4142]"></div>
+                <SideBarIcon sectionName={option} isActive={option === activeSection}/>
           </div>
         ))}
       </div>

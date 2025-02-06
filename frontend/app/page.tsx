@@ -10,9 +10,9 @@ export default function Page() {
 
   return (
     <div className="flex h-screen w-full">
-      <Sidebar setActiveSection={setActiveSection} />
+      <Sidebar setActiveSection={setActiveSection} activeSection={activeSection}/>
       <div className="flex flex-col w-full">
-        <Header activeSection={activeSection} />
+        <Header setActiveSection={setActiveSection} activeSection={activeSection} />
         <MainPage activeSection={activeSection} />
       </div>
     </div>
