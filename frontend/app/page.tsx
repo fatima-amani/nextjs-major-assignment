@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="flex h-screen w-full">
       <Sidebar setActiveSection={setActiveSection} activeSection={activeSection}/>
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full gap-5">
         <Header setActiveSection={setActiveSection} activeSection={activeSection} />
         <MainPage activeSection={activeSection} />
       </div>

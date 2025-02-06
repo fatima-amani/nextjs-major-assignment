@@ -1,0 +1,25 @@
+{
+    "dashboardCard":[
+        {
+            "title":"Daily Sales",
+            "figure":"$2k",
+            "date":"9 Feburary 2024",
+            "icon":"db-icon-1.png",
+            "chart":"db-linechart-1.png"
+        },
+        {
+            "title":"Monthly Revenue",
+            "figure":"$55k",
+            "date":"1 Jan - 1 Feb",
+            "icon":"db-icon-1.png",
+            "chart":"db-linechart-2.png"
+        },
+        {
+            "title":"Table Occupacy",
+            "figure":"25 Tables",
+            "date":"",
+            "icon":"db-icon-1.png",
+            "chart":"db-linechart-3.png"
+        }
+    ]
+}
