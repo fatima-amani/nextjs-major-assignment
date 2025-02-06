@@ -1,25 +1,138 @@
 {
-    "dashboardCard":[
+    "dashboardData": {
+        "dashboardCard":[
+            {
+                "title":"Daily Sales",
+                "figure":"$2k",
+                "date":"9 Feburary 2024",
+                "icon":"db-icon-1.png",
+                "chart":"db-linechart-1.png"
+            },
+            {
+                "title":"Monthly Revenue",
+                "figure":"$55k",
+                "date":"1 Jan - 1 Feb",
+                "icon":"db-icon-1.png",
+                "chart":"db-linechart-2.png"
+            },
+            {
+                "title":"Table Occupacy",
+                "figure":"25 Tables",
+                "date":"",
+                "icon":"db-icon-1.png",
+                "chart":"db-linechart-3.png"
+            }
+        ],
+        "scrollCard":[
+            {
+                "img": "chicken-parmesan.png",
+                "title": "Chicken Parmesan",
+                "detail": "Serving : 01 person",
+                "stock": true,
+                "price": 55,
+                "qty":1
+
+            },
+            {
+                "img": "chicken-parmesan.png",
+                "title": "Chicken Parmesan",
+                "detail": "Serving : 01 person",
+                "stock":true,
+                "price": 55,
+                "qty":2
+            },
+            {
+                "img": "chicken-parmesan.png",
+                "title": "Chicken Parmesan",
+                "detail": "Serving : 01 person",
+                "stock": false,
+                "price": 55,
+                "qty":1
+            },
+            {
+                "img": "chicken-parmesan.png",
+                "title": "Chicken Parmesan",
+                "detail": "Serving : 01 person",
+                "stock": true,
+                "price": 55,
+                "qty":1
+            },
+            {
+                "img": "chicken-parmesan.png",
+                "title": "Chicken Parmesan",
+                "detail": "Serving : 01 person",
+                "stock": true,
+                "price": 55,
+                "qty":1
+            }
+        ]
+    },
+    "staff": [
         {
-            "title":"Daily Sales",
-            "figure":"$2k",
-            "date":"9 Feburary 2024",
-            "icon":"db-icon-1.png",
-            "chart":"db-linechart-1.png"
+          "id": 101,
+          "name": "Watson Joyce",
+          "role": "Manager",
+          "email": "watsonjoyce1121@gmail.com",
+          "phone": "+1 (123) 123 4654",
+          "age": 45,
+          "salary": 1200,
+          "timing": "9am to 6pm",
+          "image": "user-icon.png"
         },
         {
-            "title":"Monthly Revenue",
-            "figure":"$55k",
-            "date":"1 Jan - 1 Feb",
-            "icon":"db-icon-1.png",
-            "chart":"db-linechart-2.png"
+          "id": 102,
+          "name": "Watson Joyce",
+          "role": "Manager",
+          "email": "watsonjoyce1122@gmail.com",
+          "phone": "+1 (123) 123 4654",
+          "age": 46,
+          "salary": 2200,
+          "timing": "9am to 6pm",
+          "image": "user-icon.png"
         },
         {
-            "title":"Table Occupacy",
-            "figure":"25 Tables",
-            "date":"",
-            "icon":"db-icon-1.png",
-            "chart":"db-linechart-3.png"
+          "id": 103,
+          "name": "Watson Joyce",
+          "role": "Manager",
+          "email": "watsonjoyce1123@gmail.com",
+          "phone": "+1 (123) 123 4654",
+          "age": 45,
+          "salary": 3200,
+          "timing": "9am to 6pm",
+          "image": "user-icon.png"
+        },
+        {
+          "id": 104,
+          "name": "Watson Joyce",
+          "role": "Manager",
+          "email": "watsonjoyce1124@gmail.com",
+          "phone": "+1 (123) 123 4654",
+          "age": 46,
+          "salary": 4200,
+          "timing": "9am to 6pm",
+          "image": "user-icon.png"
+        },
+        {
+          "id": 105,
+          "name": "Watson Joyce",
+          "role": "Manager",
+          "email": "watsonjoyce1125@gmail.com",
+          "phone": "+1 (123) 123 4654",
+          "age": 45,
+          "salary": 5200,
+          "timing": "9am to 6pm",
+          "image": "user-icon.png"
+        },
+        {
+          "id": 106,
+          "name": "Watson Joyce",
+          "role": "Manager",
+          "email": "watsonjoyce1126@gmail.com",
+          "phone": "+1 (123) 123 4654",
+          "age": 46,
+          "salary": 2200,
+          "timing": "9am to 6pm",
+          "image": "user-icon.png"
         }
-    ]
+      ]      
 }
