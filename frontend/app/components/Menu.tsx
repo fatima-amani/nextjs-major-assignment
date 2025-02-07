@@ -9,7 +9,7 @@ export default function Menu() {
   const [activeTab, setActiveTab] = useState("Normal Menu");
 
   useEffect(() => {
-    fetch("http://localhost:3001/menu") // Adjust the URL to your JSON server
+    fetch("http://localhost:3001/menu") 
       .then((res) => res.json())
       .then((data) => setMenuData(data))
       .catch((err) => console.error("Error fetching menu data:", err));
