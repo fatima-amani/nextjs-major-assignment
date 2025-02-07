@@ -67,11 +67,15 @@ export default function Staff() {
     <div className="p-6 bg-[#1E1E1E] text-white min-h-screen">
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-semibold">Staff Management</h2>
+        <h2 className="text-white font-poppins text-[1.5625rem] font-medium leading-[2.34375rem] text-left w-[8.9375rem] h-[3.25rem]">
+          Staff ( {staffData ? staffData.length : ""} )
+        </h2>
         <div className="flex gap-4">
-          <button className="bg-[#FAC1D9] px-4 py-2 rounded text-black font-medium">Add Staff</button>
+          <button className="bg-[#FAC1D9] px-4 py-2 rounded text-black font-medium br-[0.4675rem] w-[7.4556rem] h-[3.26125rem]">
+            Add Staff
+          </button>
           <select
-            className="bg-[#303030] text-white px-4 py-2 rounded"
+            className="bg-[#303030] text-white px-4 py-2 br-[0.4675rem] rounded"
             value={sortBy}
             onChange={(e) => handleSort(e.target.value)}
           >
@@ -84,7 +88,7 @@ export default function Staff() {
       </div>
 
       {/* Tabs */}
-      <div className="flex space-x-4 mb-6">
+      <div className="flex justify-start mb-6">
         <button
           className={`px-4 py-2 rounded ${activeTab === "management" ? "bg-[#FAC1D9] text-black" : "bg-[#303030] text-white"}`}
           onClick={() => setActiveTab("management")}

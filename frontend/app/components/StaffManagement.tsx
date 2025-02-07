@@ -37,27 +37,50 @@ export default function StaffManagement({ staffDetail }: StaffManagementProps) {
 
         {/* Table Body */}
         <tbody>
-          {staffDetail.map((staff) => (
-            <tr key={staff.id} className="border-b border-gray-700 text-white">
+          {staffDetail.map((staff, index) => (
+            <tr key={staff.id} className={`border-b border-gray-700 text-white 
+              ${index%2 ===0 ? "bg-[#3D4142]" : "bg-[#292C2D]"}`}>
               <td className="p-2"><Checkbox className="border-white" />
               </td>
-              <td className="p-2">#{staff.id}</td>
+              <td className="p-2 text-white font-[Poppins] text-[0.875rem] font-normal leading-[1.3125rem] text-left">
+                #{staff.id}
+              </td>
               <td className="p-2 flex items-center space-x-3">
-                <img src={staff.image} alt={staff.name} className="w-8 h-8 rounded-full" />
+                <img src={staff.image} alt={staff.name} className="w-[1.6875rem] h-[1.6875rem]" />
                 <div>
-                  <p>{staff.name}</p>
-                  <p className="text-xs text-gray-400">{staff.role}</p>
+                  <p className="font-[Poppins] text-[0.875rem] font-normal leading-[1.3125rem] text-left text-white">{staff.name}</p>
+                  <p className="font-[Poppins] text-[0.75rem] font-normal leading-[1.125rem] text-left text-[#FAC1D9]">
+                    {staff.role}
+                  </p>
                 </div>
               </td>
-              <td className="p-2">{staff.email}</td>
-              <td className="p-2">{staff.phone}</td>
-              <td className="p-2">{staff.age} yr</td>
-              <td className="p-2">${staff.salary.toFixed(2)}</td>
-              <td className="p-2">{staff.timing}</td>
+              <td className="p-2 text-white font-[Poppins] text-[0.875rem] font-normal leading-[1.3125rem] text-left">
+                {staff.email}
+              </td>
+              <td className="p-2 text-white font-poppins text-[0.875rem] font-normal leading-[1.3125rem] text-left">
+                {staff.phone}
+              </td>
+              <td className="p-2  text-white font-poppins text-[0.875rem] font-normal leading-[1.3125rem] text-left">
+                {staff.age} yr
+              </td>
+              <td className="p-2  text-white font-poppins text-[0.875rem] font-normal leading-[1.3125rem] text-left">
+                ${staff.salary.toFixed(2)}
+              </td>
+              <td className="p-2  text-white font-poppins text-[0.875rem] font-normal leading-[1.3125rem] text-left">
+                {staff.timing}
+              </td>
               <td className="p-2 flex space-x-3">
+                
                 {/* Action Icons (Replace with actual icons) */}
-                <button className="text-gray-400 hover:text-white">✏️</button>
-                <button className="text-red-500 hover:text-red-700">🗑️</button>
+                <button className="">
+                  <img src="/staff-eye-icon.png" alt="" />
+                </button>
+                <button className="">
+                  <img src="/staff-edit-icon.png" alt="" />
+                </button>
+                <button className="">
+                  <img src="staff-delete-icon.png" alt="" />
+                </button>
               </td>
             </tr>
           ))}

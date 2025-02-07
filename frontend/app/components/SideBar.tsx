@@ -1,5 +1,4 @@
 import SideBarIcon from "./SideBarIcon";
-import Image from "next/image";
 
 interface SidebarProps {
     setActiveSection: (section: string) => void;
