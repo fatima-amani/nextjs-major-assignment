@@ -1,7 +1,7 @@
 "use client";
 
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
@@ -37,22 +37,23 @@ const chartConfig = {
 
 export default function DashboardLineChart() {
   return (
-    <Card className="bg-black w-[68.2rem] h-[20rem] flex flex-col justify-between">
+    <Card className="bg-black w-full max-w-[68rem] h-[20rem] flex flex-col justify-center p-4">
       {/* Chart Section */}
       <CardContent className="bg-black">
         <ChartContainer config={chartConfig}>
           <LineChart
             accessibilityLayer
             data={chartData}
-            margin={{ left: 12, right: 12 }}
+            margin={{ left: 20, right: 20 }}
+            width={1000} // Ensuring proper fit within container
+            height={300}
           >
-            <CartesianGrid vertical={false} />
+            <CartesianGrid vertical={false} strokeDasharray="3 3" />
             <XAxis
               dataKey="month"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
-              tickFormatter={(value) => value.slice(0, 3)}
               className="text-white"
             />
             <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
@@ -73,15 +74,6 @@ export default function DashboardLineChart() {
           </LineChart>
         </ChartContainer>
       </CardContent>
-
-      {/* Month Labels */}
-      {/* <CardFooter className="flex justify-between items-center text-white px-6 mt-2">
-        {chartData.map((data) => (
-          <div key={data.month} className="text-sm">
-            {data.month}
-          </div>
-        ))}
-      </CardFooter> */}
     </Card>
   );
 }
