@@ -31,5 +31,5 @@ export default function MainPage({ activeSection }: MainPageProps) {
     }
   };
 
-  return <div className="">{renderComponent()}</div>;
+  return <div className="mt-4 mx-2">{renderComponent()}</div>;
 }

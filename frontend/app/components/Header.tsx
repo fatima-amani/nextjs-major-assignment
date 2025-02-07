@@ -15,7 +15,7 @@ export default function Header({ setActiveSection, activeSection }: SidebarProps
 
 
     return(
-        <div className="w-[95%] h-[5%] flex justify-between items-center mt-10 ml-5">
+        <div className="w-[95%] h-[5%] flex justify-between items-center mt-5 ml-5">
             <div className="flex justify-between items-center w-[12.0725rem] h-[2.375rem] gap-4">
                 {/* go Back icon and dashboard  */}
                 <div>

@@ -16,7 +16,7 @@ export default function Sidebar({ setActiveSection, activeSection }: SidebarProp
     "Reservation",
   ];
   return (
-    <div className="flex flex-col justify-between items-center h-[98%] w-[15%] bg-[#292c2d] rounded-tr-[1.875rem] rounded-br-[1.875rem] pt-4 pb-5">
+    <div className=" md:flex flex-col justify-between items-center h-[98%] w-[15%] bg-[#292c2d] rounded-tr-[1.875rem] rounded-br-[1.875rem] pt-4 pb-5 ">
       <div className="flex flex-col justify-between items-center">
         <div className="font-poppins font-semibold text-[1.253rem] leading-[1.88rem] text-center text-[#fac1d9] mb-4">
           COSYPOS

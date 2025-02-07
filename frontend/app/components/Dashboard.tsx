@@ -18,7 +18,8 @@ interface ScrollCardData {
     title: string;
     detail: string;
     stock: boolean;
-    price: string;
+    price: number;
+    qty:number
 }
 
 export default function Dashboard() {
@@ -49,7 +50,7 @@ export default function Dashboard() {
     return (
         <div className="ml-5">
             {/* Dashboard Cards Section */}
-            <div className="flex justify-around">
+            <div className="flex justify-around overflow-x-auto">
                 {!loading && dashboardCards.map((data, index) => (
                     <DashboardCard key={index} data={data} />
                 ))}
@@ -57,12 +58,12 @@ export default function Dashboard() {
 
             {/* Scroll Card Section */}
             <div>
-                <ScrollCardSection scrollCards={scrollCards} />
+                <ScrollCardSection scrollCards={scrollCards || []} />
             </div>
 
             {/* Bottom Chart Section */}
-            <div>
-                <DashboardChart />
+            <div className="">
+                <DashboardChart/>
             </div>
         </div>
     );

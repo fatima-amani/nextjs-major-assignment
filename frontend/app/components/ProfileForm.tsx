@@ -14,7 +14,6 @@ export default function ProfileForm() {
 
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const [loading, setLoading] = useState(true);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,18 +21,6 @@ export default function ProfileForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-  //   // Send updated data to JSON Server
-  //   fetch("http://localhost:3001/users/1", {
-  //     method: "PUT",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(formData),
-  //   })
-  //     .then((res) => res.json())
-  //     .then(() => alert("Profile updated successfully!"))
-  //     .catch((error) => console.error("Error updating profile:", error));
   };
 
 
