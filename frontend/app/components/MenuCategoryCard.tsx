@@ -6,10 +6,19 @@ interface CategoryCardProps {
   
   export default function MenuCategoryCard({ name, count, icon }: CategoryCardProps) {
     return (
-      <div className="flex flex-col items-center justify-center bg-[#292C2D] px-4 py-3 rounded-lg text-center">
-        <span className="text-2xl">{icon}</span>
-        <p className="text-white">{name}</p>
-        <p className="text-sm text-gray-400">{count} items</p>
+      <div className={`flex p-2 justify-between w-[10rem] h-[9.125rem] ${name==="All" ? "bg-[#FAC1D9] text-[#333333]" : "bg-[#292C2D] text-white" }`}>
+        <div className="flex flex-col justify-end h-full">
+          <div className={`.font-poppins text-[1rem] font-medium leading-[1.5rem] text-left`}>
+            {name}
+          </div>
+          <div className={`.font-poppins text-[1rem] font-light leading-[1.5rem] text-left`}>
+            {count} items
+          </div>
+        </div>
+        <div className="flex flex-col items-start">
+          <img src={icon} alt="" className="w-[2.5rem] h-[2.5rem]
+"/>
+        </div>
       </div>
     );
   }

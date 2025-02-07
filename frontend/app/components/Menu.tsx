@@ -16,13 +16,13 @@ export default function Menu() {
   }, []);
 
   const categories = [
-    { name: "All", count: 116, icon: "🔲" },
-    { name: "Pizza", count: 20, icon: "🍕" },
-    { name: "Burger", count: 15, icon: "🍔" },
-    { name: "Chicken", count: 10, icon: "🍗" },
-    { name: "Bakery", count: 18, icon: "🎂" },
-    { name: "Beverage", count: 12, icon: "🥤" },
-    { name: "Seafood", count: 16, icon: "🦐" },
+    { name: "All", count: 116, icon: "menu-all.png" },
+    { name: "Pizza", count: 20, icon: "menu-pizza.png" },
+    { name: "Burger", count: 15, icon: "menu-burger.png" },
+    { name: "Chicken", count: 10, icon: "menu-chicken.png" },
+    { name: "Bakery", count: 18, icon: "menu-bakery.png" },
+    { name: "Beverage", count: 12, icon: "menu-beverage.png" },
+    { name: "Seafood", count: 16, icon: "menu-seafood.png" },
   ];
 
   return (

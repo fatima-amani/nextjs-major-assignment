@@ -46,8 +46,8 @@ export default function Attendance({ staffDetail }: StaffManagementProps) {
 
         {/* Table Body */}
         <tbody>
-          {staffDetail.map((staff) => (
-            <tr key={staff.id} className="border-b border-gray-700 text-white">
+          {staffDetail.map((staff,index) => (
+            <tr key={staff.id} className={`border-b border-gray-700 text-white ${index%2 ===0 ? "bg-[#3D4142]" : "bg-[#292C2D]"}`}>
               <td className="p-2"></td>
               <td className="p-2 text-white font-[Poppins] text-[0.875rem] font-normal leading-[1.3125rem] text-left">
                 #{staff.id}

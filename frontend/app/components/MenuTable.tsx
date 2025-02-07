@@ -1,4 +1,5 @@
 import MenuTableRow from "./MenuTableRow";
+import { Checkbox } from "@/components/ui/checkbox";
 
 interface MenuTableProps {
   data: any[];
@@ -10,7 +11,9 @@ export default function MenuTable({ data }: MenuTableProps) {
       <table className="w-full border-collapse">
         <thead className="bg-[#333] text-left">
           <tr>
-            <th className="p-2"><input type="checkbox" /></th>
+            <th className="p-2">
+              <Checkbox className="border-white" />
+            </th>
             <th className="p-2">Product</th>
             <th className="p-2">Product Name</th>
             <th className="p-2">Item ID</th>
@@ -23,7 +26,7 @@ export default function MenuTable({ data }: MenuTableProps) {
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <MenuTableRow key={index} {...item} />
+            <MenuTableRow key={index} index={index} {...item} />
           ))}
         </tbody>
       </table>
