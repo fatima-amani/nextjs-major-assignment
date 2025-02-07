@@ -24,9 +24,10 @@ export default function MainPage({ activeSection }: MainPageProps) {
       case "Reports":
       case "Order/Table":
       case "Reservation":
-        return <Demo sectionName={activeSection} />; // Use a generic demo page
+      case "Notification":
+        return <Demo sectionName={activeSection} />; 
       default:
-        return <div className="text-white text-center p-10">Section Not Found</div>;
+        return <Demo sectionName={activeSection} />;
     }
   };
 

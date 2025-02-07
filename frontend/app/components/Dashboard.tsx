@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import DashboardCard from "./DashboardCard";
 import ScrollCardSection from "./ScrollCardSection";
+import DashboardChart from "./DashboardChart";
 
 interface DashboardCardData {
     title: string;
@@ -28,7 +29,7 @@ export default function Dashboard() {
     useEffect(() => {
         const fetchDashboardData = async () => {
             try {
-                const response = await fetch("http://localhost:3001/data");
+                const response = await fetch("http://localhost:8080/dashboard");
                 const data = await response.json();
 
                 if (data && data.dashboardCard && data.scrollCard) {
@@ -61,7 +62,7 @@ export default function Dashboard() {
 
             {/* Bottom Chart Section */}
             <div>
-                
+                <DashboardChart />
             </div>
         </div>
     );

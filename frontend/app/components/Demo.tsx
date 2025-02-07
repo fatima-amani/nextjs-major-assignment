@@ -4,6 +4,8 @@ interface DemoProps {
 
 export default function Demo({ sectionName }: DemoProps){
     return(
-        <h1 className="text-white">Sorry {sectionName} Page in under Maintenance</h1>
+        <div className="text-white text-center p-10">
+            Sorry the {sectionName} Page is Under Maintenance.
+        </div>
     )
 }
