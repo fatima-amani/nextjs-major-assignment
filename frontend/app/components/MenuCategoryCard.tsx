@@ -6,7 +6,7 @@ interface CategoryCardProps {
   
   export default function MenuCategoryCard({ name, count, icon }: CategoryCardProps) {
     return (
-      <div className={`flex p-2 justify-between w-[10rem] h-[9.125rem] ${name==="All" ? "bg-[#FAC1D9] text-[#333333]" : "bg-[#292C2D] text-white" }`}>
+      <div className={`flex p-3 justify-between w-[10rem] h-[9.125rem] rounded-[0.625rem] ${name==="All" ? "bg-[#FAC1D9] text-[#333333]" : "bg-[#292C2D] text-white" }`}>
         <div className="flex flex-col justify-end h-full">
           <div className={`.font-poppins text-[1rem] font-medium leading-[1.5rem] text-left`}>
             {name}
