@@ -75,7 +75,7 @@ export default function DashboardChart() {
             ))}
           </div>
 
-          <button className="flex items-center justify-center px-4 py-2 border border-[#FAC1D9] rounded-lg text-[#FAC1D9] font-medium">
+          <button className="flex items-center justify-center px-4 py-2 border border-[#FAC1D9] rounded-lg text-[#FAC1D9] font-medium hover:bg-[#FAC1D9] hover:text-black">
             <img src="export-logo.png" alt="Export" className="w-5 h-5 mr-2" />
             Export
           </button>
