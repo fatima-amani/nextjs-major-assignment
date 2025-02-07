@@ -134,5 +134,80 @@
           "timing": "9am to 6pm",
           "image": "user-icon.png"
         }
-      ]      
+      ],
+      "menu":[
+        {
+          "id":2231644,
+          "name":"Chicken Parmesan",
+          "image":"chicken-parmesan.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+          "stock":119,
+          "category":"Chicken",
+          "price":55,
+          "inStock":true
+        },
+        {
+          "id":2231644,
+          "name":"Chicken Parmesan",
+          "image":"chicken-parmesan.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+          "stock":119,
+          "category":"Chicken",
+          "price":55,
+          "inStock":true
+        },
+        {
+          "id":2231644,
+          "name":"Chicken Parmesan",
+          "image":"chicken-parmesan.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+          "stock":119,
+          "category":"Chicken",
+          "price":55,
+          "inStock":true
+        },
+        {
+          "id":2231644,
+          "name":"Chicken Parmesan",
+          "image":"chicken-parmesan.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+          "stock":119,
+          "category":"Chicken",
+          "price":55,
+          "inStock":true
+        },
+        {
+          "id":2231644,
+          "name":"Chicken Parmesan",
+          "image":"chicken-parmesan.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+          "stock":119,
+          "category":"Chicken",
+          "price":55,
+          "inStock":true
+        },
+        {
+          "id":2231644,
+          "name":"Chicken Parmesan",
+          "image":"chicken-parmesan.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+          "stock":119,
+          "category":"Chicken",
+          "price":55,
+          "inStock":true
+        }
+      ],
+    
+        "users": [
+          {
+            "id": 1,
+            "firstName": "John Doe",
+            "email": "johndoe123@gmail.com",
+            "address": "123 Street USA, Chicago",
+            "newPassword": "",
+            "confirmPassword": "********"
+          }
+        ]
+      
+            
 }
